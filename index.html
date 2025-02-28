@@ -46,12 +46,12 @@
                                     src="assets/checkbox.svg" alt="checkbox"></div>
                             <div class="">
                                 <p>Task Assigned </p>
-                                <h3 class="text-[#00303C] text-3xl font-bold">06</h3>
+                                <h3 class="text-[#00303C] text-3xl font-bold">0<span id="pending-task">6</span></h3>
                             </div>
                         </div>
                         <!-- discover -->
-                        <div
-                            class="col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl flex justify-start items-center gap-6 pl-6 py-6">
+                        <div id="discover-section"
+                            class=" cursor-pointer col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl flex justify-start items-center gap-6 pl-6 py-6">
                             <img src="assets/board.svg" alt="">
                             <h3 class="text-2xl font-semibold text-white">Discover Something <br> New Today!</h3>
                         </div>
@@ -61,8 +61,8 @@
                             <div class="h-16 w-16 rounded-full bg-white flex items-center justify-center"><img
                                     src="assets/calender.svg" alt="checkbox"></div>
                             <div class="">
-                                <p>Wed, </p>
-                                <h3 class="text-[#00303C] text-xl font-bold">Jul 28 2025</h3>
+                                <p id="weekday"> </p>
+                                <h3 id="date" class="text-[#00303C] text-xl font-bold"></h3>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                                     <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
                                     <h3 class="text-base font-normal text-[#00303C]">21 March 2025</h3>
                                 </div>
-                                <button class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
+                                <button id="completed-btn" class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
                             </div>
                         </div>
                         <!-- single card 2 -->
@@ -187,6 +187,9 @@
             </div>
         </div>
     </main>
+    <script src="script/utilities.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/blog.js"></script>
 </body>
 
 </html>
