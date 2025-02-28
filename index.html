@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="bg-[#F4F7FF] h-screen font-poppins">
+<body class="bg-[#F4F7FF] font-poppins">
     <header class="py-3 container mx-auto">
         <nav class="py-3 px-4 bg-base-100 shadow-xs mx-auto rounded-xl flex justify-between items-center">
             <div class="flex gap-3">
@@ -35,9 +35,10 @@
         <div class="container mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
                 <!-- left -->
-                <section class="col-span-3 bg-white py-6 rounded-xl">
+                <section class="lg:col-span-3 bg-white py-6 rounded-xl">
                     <!-- task head -->
-                    <div class="grid lg:grid-cols-4 grid-cols-1 gap-6 border-b-2 border-[#3752FD33] border-dashed pb-5 px-6">
+                    <div
+                        class="grid lg:grid-cols-4 grid-cols-1 gap-6 border-b-2 border-[#3752FD33] border-dashed pb-5 px-6">
                         <!-- task assigned -->
                         <div
                             class="bg-[#F4F7FF] pl-2 py-4 rounded-xl flex justify-start md:justify-evenly items-center">
@@ -45,7 +46,7 @@
                                     src="assets/checkbox.svg" alt="checkbox"></div>
                             <div class="">
                                 <p>Task Assigned </p>
-                                <h3 class="text-[#00303C] text-3xl font-bold">05</h3>
+                                <h3 class="text-[#00303C] text-3xl font-bold">06</h3>
                             </div>
                         </div>
                         <!-- discover -->
@@ -66,16 +67,15 @@
                         </div>
                     </div>
                     <!-- task body -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 px-6">
-                        <!-- single card -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+                        <!-- single card 1 -->
                         <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
-                            <span class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">ShopEase</span>
-                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Fix Mobile Button Issue</h3>
-                            <div class="bg-white p-4 rounded-xl">
-                                <p class="text-base font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                                    and ensure onClick works properly</p>
+                            <span
+                                class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">Shoppio</span>
+                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Form Validation</h3>
+                            <div class="bg-white p-4 rounded-xl"><p class="text-base font-normal">Add input checks, error messages, and prevent invalid submissions</p>
                             </div>
-                            <div class="flex justify-between items-center border-t border-dashed pt-4">
+                            <div class="flex lg:flex-col xl:flex-row justify-between items-center border-t border-dashed pt-4 lg:space-y-2">
                                 <div>
                                     <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
                                     <h3 class="text-base font-normal text-[#00303C]">21 March 2025</h3>
@@ -83,72 +83,107 @@
                                 <button class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
                             </div>
                         </div>
+                        <!-- single card 2 -->
                         <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
-                            <span class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">ShopEase</span>
-                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Fix Mobile Button Issue</h3>
+                            <span
+                                class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">Care Techno</span>
+                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Improve Responsiveness</h3>
                             <div class="bg-white p-4 rounded-xl">
-                                <p class="text-base font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                                    and ensure onClick works properly</p>
+                                <p class="text-base font-normal">Adjust layouts, fonts, images and media queries for a smooth experience.</p>
                             </div>
-                            <div class="flex justify-between items-center border-t border-dashed pt-4">
+                            <div class="flex lg:flex-col xl:flex-row justify-between items-center border-t border-dashed pt-4 lg:space-y-2">
                                 <div>
                                     <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
-                                    <h3 class="text-base font-normal text-[#00303C]">21 March 2025</h3>
+                                    <h3 class="text-base font-normal text-[#00303C]">21 Feb 2025</h3>
                                 </div>
                                 <button class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
                             </div>
                         </div>
+                        <!-- single card 3 -->
                         <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
-                            <span class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">ShopEase</span>
-                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Fix Mobile Button Issue</h3>
+                            <span
+                                class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">P.Hero</span>
+                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Integrate API Data</h3>
                             <div class="bg-white p-4 rounded-xl">
-                                <p class="text-base font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                                    and ensure onClick works properly</p>
+                                <p class="text-base font-normal">Fetch and display dynamic content using secure API endpoints.</p>
                             </div>
-                            <div class="flex justify-between items-center border-t border-dashed pt-4">
+                            <div class="flex lg:flex-col xl:flex-row justify-between items-center border-t border-dashed pt-4 lg:space-y-2">
                                 <div>
                                     <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
-                                    <h3 class="text-base font-normal text-[#00303C]">21 March 2025</h3>
+                                    <h3 class="text-base font-normal text-[#00303C]">25 Mar 2025</h3>
                                 </div>
                                 <button class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
                             </div>
                         </div>
+                        <!-- single card 4 -->
                         <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
-                            <span class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">ShopEase</span>
-                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Fix Mobile Button Issue</h3>
+                            <span
+                                class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">VerTuk</span>
+                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Fix Console Errors</h3>
                             <div class="bg-white p-4 rounded-xl">
-                                <p class="text-base font-normal">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                                    and ensure onClick works properly</p>
+                                <p class="text-base font-normal">Debug scripts, fix warnings, and ensure smooth functionality.</p>
                             </div>
-                            <div class="flex justify-between items-center border-t border-dashed pt-4">
+                            <div class="flex lg:flex-col xl:flex-row justify-between items-center border-t border-dashed pt-4 lg:space-y-2">
                                 <div>
                                     <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
-                                    <h3 class="text-base font-normal text-[#00303C]">21 March 2025</h3>
+                                    <h3 class="text-base font-normal text-[#00303C]">08 Jan 2025</h3>
                                 </div>
                                 <button class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
                             </div>
                         </div>
-
+                        <!-- single card 5 -->
+                        <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
+                            <span
+                                class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">A1School</span>
+                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Improve Accessibility</h3>
+                            <div class="bg-white p-4 rounded-xl">
+                                <p class="text-base font-normal">Add ARIA roles, high contrast, and keyboard-friendly navigation.</p>
+                            </div>
+                            <div class="flex lg:flex-col xl:flex-row justify-between items-center border-t border-dashed pt-4 lg:space-y-2">
+                                <div>
+                                    <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
+                                    <h3 class="text-base font-normal text-[#00303C]">12 Apr 2025</h3>
+                                </div>
+                                <button class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
+                            </div>
+                        </div>
+                        <!-- single card 6 -->
+                        <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
+                            <span
+                                class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">Payoo</span>
+                            <h3 class="text-2xl font-medium text-[#00303C] mt-4">Enhance Security</h3>
+                            <div class="bg-white p-4 rounded-xl">
+                                <p class="text-base font-normal">Sanitize inputs, enable HTTPS, and prevent unauthorized access.</p>
+                            </div>
+                            <div class="flex lg:flex-col xl:flex-row justify-between items-center border-t border-dashed pt-4 lg:space-y-2">
+                                <div>
+                                    <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
+                                    <h3 class="text-base font-normal text-[#00303C]">10 Jun 2025</h3>
+                                </div>
+                                <button class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!-- right aside -->
-                <section>
-                    <aside class="bg-white py-5 rounded-xl">
-                        <div>
-                            <!-- activity head -->
-                            <div class=" border-b-2 border-[#3752FD33] border-dashed pb-5 space-y-5 text-center">
-                                <div class="flex gap-3 justify-center">
-                                    <img src="assets/activity.svg" alt="activity icon">
-                                    <h4 class="">Activity Log</h4>
-                                </div>
-                                <div><button class="btn text-white text-base rounded-md bg-[#3752FD]">Clear
-                                        History</button></div>
+                <section class="lg:col-span-1 h-full flex flex-col">
+                    <aside class="bg-white py-5 rounded-xl flex flex-col h-full">
+                        <div class="border-b-2 border-[#3752FD33] border-dashed pb-5 space-y-5 text-center">
+                            <div class="flex gap-3 justify-center">
+                                <img src="assets/activity.svg" alt="activity icon">
+                                <h4 class="">Activity Log</h4>
                             </div>
-                            <!-- activity body -->
-                            <div></div>
+                            <div>
+                                <button class="btn text-white text-base rounded-md bg-[#3752FD]">Clear History</button>
+                            </div>
+                        </div>
+                        <!-- activity body -->
+                        <div class="flex-1 overflow-y-auto p-4">
+                            <p class="text-gray-500">No recent activity</p>
                         </div>
                     </aside>
                 </section>
+
             </div>
         </div>
     </main>
