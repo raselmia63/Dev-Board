@@ -42,7 +42,7 @@ function addToHistory(taskTitle) {
     let newHistoryItem = `
         <div class="bg-[#F4F7FF] p-4 rounded-lg shadow mb-6">
             <h3 class="text-base font-normal color-black">
-                You have completed the task <i>${taskTitle}</i> at ${currentTime}
+                You have completed the task <span class="font-semibold">${taskTitle}</span> at ${currentTime}
             </h3>
         </div>
     `;
@@ -50,6 +50,7 @@ function addToHistory(taskTitle) {
     historySection.innerHTML += newHistoryItem;
 }
 
+let clickCount =0;
 
 // total completed task event handler
 function handleButtonClick(taskId) {
@@ -73,14 +74,13 @@ function handleButtonClick(taskId) {
      addToHistory(taskTitle);
 
     // alert 
-    let clickCount =0;
+  
     clickCount++;
-
-    if (clickCount > 0 && clickCount <= 5) {
-        alert("🎉 You have completed " + clickCount + " tasks!");
+    if (clickCount > 0 && clickCount <= 6) {
+        alert("Board Updated Successfully");
     }
     if (clickCount === 6) {
-        alert("🎉🎉🎉 Congratulations! You have completed all tasks.");
+        alert("🎉🎉🎉 Congratulations! You have completed all the current tasks.");
     }
 }
 // clear history 
