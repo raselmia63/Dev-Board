@@ -43,23 +43,23 @@
                         <div
                             class="bg-[#F4F7FF] pl-2 py-4 rounded-xl flex justify-start md:justify-evenly items-center">
                             <div class="h-16 w-16 rounded-full bg-white flex items-center justify-center"><img
-                                    src="assets/checkbox.svg" alt="checkbox"></div>
+                                  class=""  src="assets/checkbox.svg" alt="checkbox"></div>
                             <div class="">
                                 <p>Task Assigned </p>
-                                <h3 class="text-[#00303C] text-3xl font-bold">0<span id="pending-task">6</span></h3>
+                                <h3 id="pending-task" class="text-[#00303C] text-2xl md:text-2xl font-bold">6</h3>
                             </div>
                         </div>
                         <!-- discover -->
                         <div id="discover-section"
-                            class=" cursor-pointer col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl flex justify-start items-center gap-6 pl-6 py-6">
-                            <img src="assets/board.svg" alt="">
-                            <h3 class="text-2xl font-semibold text-white">Discover Something <br> New Today!</h3>
+                            class=" cursor-pointer md:col-span-2 bg-linear-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl flex justify-start items-center gap-6 pl-6 py-6">
+                            <img class="w-15 h-15 md:h-20 md:w-20" src="assets/board.svg" alt="">
+                            <h3 class="text-xl md:text-2xl font-semibold text-white">Discover Something <br> New Today!</h3>
                         </div>
                         <!-- calendar date  -->
                         <div
                             class="bg-[#F4F7FF] pl-2 py-4 px-3 rounded-xl flex justify-start md:justify-evenly items-center">
                             <div class="h-16 w-16 rounded-full bg-white flex items-center justify-center"><img
-                                    src="assets/calender.svg" alt="checkbox"></div>
+                                    src="assets/calender.svg" alt="calender"></div>
                             <div class="">
                                 <p id="weekday"> </p>
                                 <h3 id="date" class="text-[#00303C] text-xl font-bold"></h3>
@@ -81,7 +81,7 @@
                                 class="flex lg:flex-col xl:flex-row justify-between items-center border-t border-[#3752FD33] border-dashed pt-4 lg:space-y-2">
                                 <div>
                                     <h4 class="text-sm font-normal text-[#00303C]">Deadline</h4>
-                                    <h3 class="text-base font-normal text-[#00303C]">21 March 2025</h3>
+                                    <h3 class="text-base font-normal text-[#00303C]">21 Mar 2025</h3>
                                 </div>
                                 <button id="completed-btn-1"
                                     class="btn text-white text-base rounded-md bg-[#3752FD]">Completed</button>
@@ -91,9 +91,9 @@
                         <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
                             <span class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">Care
                                 Techno</span>
-                            <h3 id="task-title-2" class="text-2xl font-medium text-[#00303C] mt-4">Improve Responsiveness</h3>
+                            <h3 id="task-title-2" class="text-2xl font-medium text-[#00303C] mt-4">Fix Responsive</h3>
                             <div class="bg-white p-4 rounded-xl">
-                                <p class="text-base font-normal">Adjust layouts, fonts, images and media queries for a
+                                <p class="text-base font-normal">Adjust layouts, fonts and media queries for a
                                     smooth experience.</p>
                             </div>
                             <div
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <!-- single card 4 -->
-                        <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
+                        <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4">
                             <span
                                 class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">VerTuk</span>
                             <h3 id="task-title-4" class="text-2xl font-medium text-[#00303C] mt-4">Fix Console Errors</h3>
@@ -145,7 +145,7 @@
                             </div>
                         </div>
                         <!-- single card 5 -->
-                        <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
+                        <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4">
                             <span
                                 class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">A1School</span>
                             <h3 id="task-title-5" class="text-2xl font-medium text-[#00303C] mt-4">Improve Accessibility</h3>
@@ -164,7 +164,7 @@
                             </div>
                         </div>
                         <!-- single card 6 -->
-                        <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4 mt-4">
+                        <div class="bg-[#F4F7FF] p-6 rounded-xl space-y-4">
                             <span
                                 class="tag bg-white px-4 py-2 rounded-lg text-base font-normal text-[#00303C]">Payoo</span>
                             <h3 id="task-title-6" class="text-2xl font-medium text-[#00303C] mt-4">Enhance Security</h3>
@@ -206,13 +206,11 @@
                         </div>
                     </aside>
                 </section>
-
             </div>
         </div>
     </main>
     <script src="script/utilities.js"></script>
     <script src="script/main.js"></script>
-    <script src="script/blog.js"></script>
 </body>
 
 </html>

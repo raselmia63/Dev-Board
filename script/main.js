@@ -1,6 +1,6 @@
 //ref to blog page
 document.getElementById('discover-section').addEventListener('click', function(){
-    window.location.href="/blog.html";
+    window.location.href="./blog.html";
 })
 
 //theme color change
@@ -69,22 +69,25 @@ function handleButtonClick(taskId) {
      let taskTitleElement = document.getElementById('task-title-' + taskId);
      let taskTitle = taskTitleElement.innerText.trim();
 
-     // Task adding to history
+     // completed task added to history
      addToHistory(taskTitle);
 
     // alert 
-    if (currentCompletedTask == 6) {
-        alert("🎉 Congratulations! You have completed all tasks.");
-    }
-    // alert('success')
-}
+    let clickCount =0;
+    clickCount++;
 
+    if (clickCount > 0 && clickCount <= 5) {
+        alert("🎉 You have completed " + clickCount + " tasks!");
+    }
+    if (clickCount === 6) {
+        alert("🎉🎉🎉 Congratulations! You have completed all tasks.");
+    }
+}
 // clear history 
 function clearHistory() {
     let historySection = document.getElementById("task-history");
     historySection.innerHTML = "";
 }
-
 
 // event for individual button
 document.getElementById('completed-btn-1').addEventListener('click', function () {
@@ -105,3 +108,9 @@ document.getElementById('completed-btn-5').addEventListener('click', function ()
 document.getElementById('completed-btn-6').addEventListener('click', function () {
     handleButtonClick(6);
 });
+
+
+if (currentCompletedTask === 30 && !alertShown) {
+    alert("🎉 Congratulations! You have completed all tasks.");
+    alertShown = true;
+}
