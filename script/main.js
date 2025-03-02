@@ -1,4 +1,4 @@
-const completeBtn = document.querySelectorAll('.completed-btn-1');
+const completeBtn = document.querySelectorAll('.btn');
 
 //ref to blog page
 document.getElementById('discover-section').addEventListener('click', function(){
