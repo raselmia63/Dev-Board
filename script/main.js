@@ -92,8 +92,3 @@ function clearHistory() {
     historySection.innerHTML = "";
 }
 
-
-if (currentCompletedTask === 30 && !alertShown) {
-    alert("🎉 Congratulations! You have completed all tasks.");
-    alertShown = true;
-}
