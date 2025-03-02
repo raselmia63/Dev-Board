@@ -1,3 +1,5 @@
+const completeBtn = document.querySelectorAll('completed-btn-1');
+
 //ref to blog page
 document.getElementById('discover-section').addEventListener('click', function(){
     window.location.href="./blog.html";
@@ -52,8 +54,8 @@ function addToHistory(taskTitle) {
 
 let clickCount =0;
 
-// total completed task event handler
-function handleButtonClick(taskId) {
+completeBtn.forEach(btn => {
+    btn.addEventListener('click', function(e){
     const completedTask = getInnerTextByID('completed-task');
     const currentCompletedTask = completedTask + 1;
     setInnerTextByIDandValue('completed-task', currentCompletedTask);
@@ -82,32 +84,13 @@ function handleButtonClick(taskId) {
     if (clickCount === 6) {
         alert("🎉🎉🎉 Congratulations! You have completed all the current tasks.");
     }
-}
+    })
+})
 // clear history 
 function clearHistory() {
     let historySection = document.getElementById("task-history");
     historySection.innerHTML = "";
 }
-
-// event for individual button
-document.getElementById('completed-btn-1').addEventListener('click', function () {
-    handleButtonClick(1);
-});
-document.getElementById('completed-btn-2').addEventListener('click', function () {
-    handleButtonClick(2);
-});
-document.getElementById('completed-btn-3').addEventListener('click', function () {
-    handleButtonClick(3);
-});
-document.getElementById('completed-btn-4').addEventListener('click', function () {
-    handleButtonClick(4);
-});
-document.getElementById('completed-btn-5').addEventListener('click', function () {
-    handleButtonClick(5);
-});
-document.getElementById('completed-btn-6').addEventListener('click', function () {
-    handleButtonClick(6);
-});
 
 
 if (currentCompletedTask === 30 && !alertShown) {
